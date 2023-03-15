@@ -1,0 +1,22 @@
+<div class="container">
+
+    <button  class="btn btn-info" style="float: right;" [routerLink]="['/app','add']">Add product</button>
+    <h1>{{catname | uppercase}}</h1>
+    <!-- <h1>Featured</h1> -->
+    <br>
+    <div class="row">
+        <div class="col-md-3"  *ngFor="let product of this.products;let i = index">
+            <app-card
+            
+            [id]="product.id"
+            [image]="product.image"
+            [price]="product.price"
+            [title]="product.title"
+            [description]="product.description"
+            [rating]="product.rating.rate"
+            [date]="product.date"
+        
+            ></app-card>
+        </div>
+    </div>
+</div>

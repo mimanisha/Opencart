@@ -1,0 +1,26 @@
+.bt{
+    border: none;
+}
+/* .p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: smaller;
+} */
+.card{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.card-text{
+    height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-img-top{
+    height: 140px;
+    width:auto;
+    margin: auto;
+}

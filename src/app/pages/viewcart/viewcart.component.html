@@ -1,0 +1,29 @@
+<button class="btn btn-outline-info" [routerLink]="['/app','home']">  Back to home</button>
+<br> <br>
+<!-- <button class="btn btn-outline-danger" (click)="delete()" >Delete product</button> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <img class="image-fluid" [src]="product.image" alt="">
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card">
+                <!-- <button class="edit" [routerLink]="['/mainpage','edit',this.id]">Edit</button> -->
+                <div class="card-title">{{this.product.title}}</div>
+                <h2>{{this.product.price | currency:'INR'}}</h2>
+            </div>
+
+            
+        </div>
+
+    </div>
+</div>
+<!-- 
+<pre>
+    {{this.product | json}}
+</pre> -->
